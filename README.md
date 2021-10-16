@@ -1,24 +1,28 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Installing
+1. Download the zipped file and unzip it or Clone it
+		```
+	 	https://github.com/zeyadsaleh/Mini-truck-system.git
+		```
+2. cd inside the project
+    ```sh
+    cd Mini-truck-system
+    ```
+3.  Run this command to install all gems we used
+    ```sh
+    bundle install
+    ```
+4. run this command to create your database
+    ```sh
+    rake db:create db:migrate
+    ```
+6. run the sidekiq task
+    ```sh
+    sidekiq ./app/workers/truck_report_worker.rb
+    ```
+7. Start your server
+    ```sh
+    rails server
+    ```
+8. Open your browser on this url ``` http://localhost:3000```
