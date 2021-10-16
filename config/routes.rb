@@ -3,6 +3,6 @@ Rails.application.routes.draw do
 
   get '/api/v1/truck/:id/summary' => 'trucks#truck_distance'
   get '/api/v1/trucks/active' => 'trucks#active_trucks'
-  get '/api/v1/truck/:id/log' => 'trucks#truck_log'
+  post '/api/v1/truck/log' => 'truck_logs#create'
 
 end
