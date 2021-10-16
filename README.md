@@ -26,3 +26,14 @@
     rails server
     ```
 8. Open your browser on this url ``` http://localhost:3000```
+
+### Installing via docker
+1. docker build
+	```
+	docker build .
+	```
+2. docker-cpmpose up
+    ```sh
+    docker-cpmpose up
+    ```
+
